@@ -1,0 +1,92 @@
+/* Common */
+header, nav, article, aside, section, footer {
+  display: block;
+}
+
+body {
+  background-color: #EEEEFF;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h3 {
+  font-size: 1.2em;
+}
+
+h1.timeline-Header-title {
+  font-size: 1em;
+}
+/* Top Line */
+header img.logo {
+  width: 200px;
+  height: 60px;
+}
+
+/* Navigation */
+nav {
+  width: 100%;
+}
+nav div {
+  margin: 0 auto;
+  width: 600px;
+}
+nav div ul li {
+  width: 20%;
+  text-align: center;
+}
+
+/* Side Menu and Main Contents */
+div.wrapper {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+aside.sidemenu, main {
+  padding: 40px;
+  border-radius: 20px;
+}
+aside.sidemenu {
+  width: 200px;
+}
+
+
+
+/* Side Menu */
+aside.sidemenu {
+  width: 250px;
+}
+
+aside.sidemenu {
+  margin-right: 30px;
+  background-color: #FFFFFF;
+}
+
+ul.navi {
+  padding: 0;
+  list-style: none;
+}
+ul.navi li {
+  border-bottom: 1px dashed;
+}
+ul.navi li a {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 0;
+  vertical-align: middle;
+}
+
+/* Main Contents */
+main {
+  width: 600px;
+  background-color: #FFFFFF;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
