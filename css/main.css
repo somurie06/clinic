@@ -4,7 +4,8 @@ header, nav, article, aside, section, footer {
 }
 
 body {
-  background-color: #DDEEFF;
+/*  background-color: #DDEEFF; */
+  background-color: #FFFFFF;
   color: #555555;
 }
 a, a:hover, a:visited {
@@ -36,7 +37,7 @@ header > div {
   padding: 20px;
   background:url("../images/back_img.jpg") no-repeat;
   display: flex;
-  color: #000000;
+/*  color: #000000;*/
 }
 header > div > div {
   height: 100%;
@@ -69,6 +70,7 @@ nav div {
 nav div ul li {
   width: 20%;
   text-align: center;
+  border-right: 1px solid #DDD;
 }
 
 /* Side Menu and Main Contents */
@@ -120,6 +122,9 @@ main {
 }
 main section {
   margin-bottom: 40px;
+}
+main section > div.section-content {
+  padding-left: 20px;
 }
 table.timetable {
   width: 500px;
