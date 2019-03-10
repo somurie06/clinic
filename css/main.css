@@ -32,31 +32,23 @@ h1.timeline-Header-title {
 header {
   height: 160px;
 }
-header > div {
-  height: 100%;
-  padding: 20px;
+header > div.title {
   background:url("../images/back_img.jpg") no-repeat;
-  display: flex;
-/*  color: #000000;*/
-}
-header > div > div {
   height: 100%;
-  width: 50%;
+}
+header > div.title > div.title_contents {
+  margin-left: 6vw;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-header div.title {
-  padding-left: 120px;
 }
 header span.title_main {
   font-size: 2em;
 }
 header span.title_sub {
+  padding-left: 1em;
   font-size: 1em;
-}
-header div.contact {
-  padding-left: 120px;
 }
 
 /* Navigation */
@@ -75,17 +67,14 @@ nav div ul li {
 
 /* Side Menu and Main Contents */
 div.wrapper {
-  margin: 20px 0;
   width: 100%;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
 }
-aside.sidemenu, main {
-  padding: 40px;
-  border-radius: 20px;
-}
 aside.sidemenu {
-  width: 280px;
+  width: 240px;
+  margin-right: 40px;
 }
 
 
@@ -93,8 +82,10 @@ aside.sidemenu {
 /* Side Menu */
 
 aside.sidemenu {
-  margin-right: 20px;
   background-color: #FFFFFF;
+}
+aside.sidemenu > div {
+  margin-right: 20px;
 }
 
 ul.navi {
@@ -117,7 +108,9 @@ ul.navi li a {
 
 /* Main Contents */
 main {
-  width: 600px;
+/*  width: 600px;*/
+  max-width: 600px;
+  min-width: 320px;
   background-color: #FFFFFF;
 }
 main section {
@@ -127,7 +120,7 @@ main section > div.section-content {
   padding-left: 20px;
 }
 table.timetable {
-  width: 500px;
+  max-width: 500px;
 }
 table.timetable th, table.timetable tr, table.timetable td {
   border: 1px solid #555555;
@@ -161,4 +154,29 @@ table.timetable th {
 footer {
   text-align: center;
   font-size: 0.8em;
+}
+
+/* Twitter */
+.box26 {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #95ccff;
+  border-radius: 8px;
+}
+.box26 .box-title {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #95ccff;
+  font-weight: bold;
+}
+.box26 p {
+  margin: 0; 
+  padding: 0;
 }

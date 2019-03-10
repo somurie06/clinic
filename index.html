@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -19,31 +19,31 @@
   </head>
   <body class="drawer drawer--left">
     <header role="banner">
-      <button type="button" class="drawer-toggle drawer-hamburger">
+      <button type="button" class="drawer-toggle drawer-hamburger d-block d-sm-none">
         <span class="sr-only">toggle navigation</span>
         <span class="drawer-hamburger-icon"></span>
       </button>
-      <nav class="drawer-nav" role="navigation">
-        <ul class="navi drawer-nav" role="navigation">
-          <li><a class="drawer-brand" href="#">メニュー</a></li>
-          <li><a href="#"><img src="images/icon/doctor.png" />Category1</a></li>
-          <li><a href="#"><img src="images/icon/injection.png" />Category2</a></li>
-          <li><a href="#"><img src="images/icon/medicine.png" />Category3</a></li>
-          <li><a href="#"><img src="images/icon/patient_chart.png" />Category4</a></li>
-        </ul>
-      </nav>
-      <div>
-        <div class="title">
+      <aside>
+        <nav class="drawer-nav" role="navigation">
+          <ul class="navi drawer-nav" role="navigation">
+            <li><a class="drawer-brand" href="#">メニュー</a></li>
+            <li><a href="#"><img src="images/icon/doctor.png" />Category1</a></li>
+            <li><a href="#"><img src="images/icon/injection.png" />Category2</a></li>
+            <li><a href="#"><img src="images/icon/medicine.png" />Category3</a></li>
+            <li><a href="#"><img src="images/icon/patient_chart.png" />Category4</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="title">
+        <div class="title_contents">
           <div><span class="title_main">うさちゃんクリニック</span></div>
           <div><span class="title_sub">内科、小児科、消化器内科</span></div>
-        </div>
-        <div class="contact">
-          <div ><span class="phone">TEL: 090-1111-2222</span></div>
-        </div>
+          <div><span class="title_sub">TEL: 090-1111-2222</span></div>
+      </div>
       </div>
     </header>
     <div class="wrapper">
-      <aside class="sidemenu">
+      <aside class="sidemenu d-none d-sm-block">
         <div>
           <h1>Category</h1>
           <ul class="navi">
@@ -94,6 +94,13 @@
               <div class="ggmap">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.105718570629!2d139.5709353155506!3d35.69901598019028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee35e8153071%3A0xd0c97d12709f5033!2z44Kr44OV44Kn44O744OJ44Kl44O744Oq44Ko44O844O044OrIOOBhuOBleOBjumkqA!5e0!3m2!1sja!2sjp!4v1552137959181" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
+            </div>
+          </section>
+          <section>
+            <h2>お知らせ</h2>
+            <div class="tweet">
+                <a class="twitter-timeline" href="https://twitter.com/somurie2?ref_src=twsrc%5Etfw">Tweets by somurie2</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </section>
         </article>
