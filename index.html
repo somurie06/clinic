@@ -17,8 +17,21 @@
 
     <title>うさちゃんクリニック</title>
   </head>
-  <body>
-    <header>
+  <body class="drawer drawer--left">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation">
+        <ul class="navi drawer-nav" role="navigation">
+          <li><a class="drawer-brand" href="#">メニュー</a></li>
+          <li><a href="#"><img src="images/icon/doctor.png" />Category1</a></li>
+          <li><a href="#"><img src="images/icon/injection.png" />Category2</a></li>
+          <li><a href="#"><img src="images/icon/medicine.png" />Category3</a></li>
+          <li><a href="#"><img src="images/icon/patient_chart.png" />Category4</a></li>
+        </ul>
+      </nav>
       <div>
         <div class="title">
           <div><span class="title_main">うさちゃんクリニック</span></div>
@@ -29,17 +42,6 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="justify-content-around">
-        <ul class="collapse navbar-collapse navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Menu1</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Menu3</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Menu2</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Menu4</a></li>
-        </ul>
-      </div>
-    </nav>
     <div class="wrapper">
       <aside class="sidemenu">
         <div>
@@ -56,7 +58,7 @@
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </aside>
-      <main>
+      <main role="main">
         <article>
           <section>
             <h2>article title</h2>
@@ -99,4 +101,16 @@
     </div>
     <footer><p>Copyright © うさちゃんクリニック</p></footer>
   </body>
+  <!-- drawer.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- drawer.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.drawer').drawer();
+    });
+  </script>
 </html>
