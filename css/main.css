@@ -44,12 +44,17 @@ header > div.title > div.title_contents {
   flex-direction: column;
   justify-content: center;
 }
-header span.title_main {
+header div.title_main {
   font-size: 1.8em;
 }
-header span.title_sub {
-  padding-left: 1em;
+header div.title_sub {
   font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+header div.title_sub div {
+  padding-left: 1em;
+  display:inline-block;
 }
 
 /* Navigation */
@@ -73,16 +78,13 @@ div.wrapper {
   display: flex;
   justify-content: center;
 }
-aside.sidemenu {
-  width: 240px;
-  margin-right: 40px;
-}
-
 
 
 /* Side Menu */
 
 aside.sidemenu {
+  width: 240px;
+  margin-right: 40px;
   background-color: #FFFFFF;
 }
 aside.sidemenu > div {
@@ -112,6 +114,7 @@ main {
 /*  width: 600px;*/
   max-width: 600px;
   min-width: 320px;
+  padding: 0 5px;
   background-color: #FFFFFF;
 }
 main section {
@@ -156,8 +159,18 @@ table.timetable span {
 
 /* Footer */
 footer {
+}
+footer > div {
+  height: 60px;
   text-align: center;
   font-size: 0.8em;
+  background-color: #c6e4ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer > div p {
+  margin: 0px;
 }
 
 /* Twitter */
@@ -183,4 +196,15 @@ footer {
 .box26 p {
   margin: 0; 
   padding: 0;
+}
+
+
+
+
+h2{
+  padding: 0.3em 0.8em;
+  color: #5989cf;
+  background: #c6e4ff;
+  border-bottom: solid 4px #aac5de;
+  border-radius: 9px;
 }
