@@ -13,7 +13,7 @@ a, a:hover, a:visited {
   color: inherit;
 }
 h1 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 h2 {
   font-size: 1.4em;
@@ -39,12 +39,13 @@ header > div.title {
 header > div.title > div.title_contents {
   margin-left: 6vw;
   padding: 20px;
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 header span.title_main {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 header span.title_sub {
   padding-left: 1em;
@@ -129,6 +130,9 @@ table.timetable th, table.timetable tr, table.timetable td {
 }
 table.timetable th {
   background-color: #F0F0F0;
+}
+table.timetable span {
+  display: inline-block;
 }
 
 /* Map */
